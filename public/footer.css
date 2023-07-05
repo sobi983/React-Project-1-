@@ -1,0 +1,16 @@
+.footer--sel1 {
+    width: 317px;
+    height: 64px;
+    border-radius: 0px 0px 10px 10px;
+    background: #161619;
+    position: static;
+}
+
+.footer--sel2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 172px;
+    margin-left: 73px;
+    margin-top: 19px;
+}
