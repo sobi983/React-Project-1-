@@ -1,0 +1,87 @@
+.sec--sel {
+  display: flex;
+  justify-content: space-around;
+}
+
+.div--reviews1 {
+  position: relative;
+  top: 445px;
+  height: 100px;
+  width: 120px;
+}
+
+.review--img1 {
+  width: 150px;
+  height: 210px;
+}
+
+.div--reviews2 {
+  display: flex;
+  margin: 2px 0 4px 2px;
+}
+.div--reviews2 P {
+  margin: 0;
+  color: #222;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 110%;
+}
+.div--reviews2 span {
+  color: #918E9B;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 110%;
+  margin-left: 2px;
+}
+
+.dot--sel {
+  margin: 0;
+}
+
+.div--reviews3 {
+  margin-top: 0;
+  width: -moz-max-content;
+  width: max-content;
+}
+.div--reviews3 .title--sel {
+  margin: 0;
+  color: #222;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 110%;
+  width: 150px;
+}
+
+.price--sel {
+  font-weight: bold;
+  line-height: 110%;
+  padding-top: 5px;
+  color: #222;
+  font-size: 12px;
+  font-style: normal;
+  margin: 0;
+}
+
+.soldout--sel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 10.24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  width: 61px;
+  height: 15px;
+  background-color: white;
+  font-family: inherit;
+  padding: 0;
+  position: absolute;
+  top: 10px;
+  left: 4px;
+}/*# sourceMappingURL=reviews.css.map */

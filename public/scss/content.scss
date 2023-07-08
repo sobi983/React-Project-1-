@@ -1,0 +1,75 @@
+@mixin display($position: relative, $top: 10px, $left: 10px) {
+    position: $position;
+    top: $top;
+    left: $left;
+}
+
+// $font-family: Popins;
+
+.img--sel {
+    @include display(relative, 0px, 0px);
+}
+
+.img--sel1 {
+    @include display($position: absolute, $top: 64.81px, $left: 77px);
+}
+
+.img--sel2 {
+    @include display($position: absolute, $top: 33.23px, $left: 157.75px);
+}
+
+.img--sel3 {
+    @include display($position: absolute, $top: 105.54px, $left: 157.75px);
+}
+
+.img--sel4 {
+    @include display(absolute, 56.13px, 238.5px);
+}
+
+.img--sel5 {
+    @include display(absolute, 161.58px, 238.5px);
+}
+
+.img--sel6 {
+    @include display(absolute, 26px, 319.85px);
+}
+
+.img--sel7 {
+    @include display(absolute, 131.45px, 319.85px);
+}
+
+.img--sel8 {
+    @include display(absolute, 44.08px, 400.59px);
+}
+
+.img--sel9 {
+    @include display(absolute, 148.93px, 400.59px);
+}
+
+.content--sel1 {
+    position: absolute;
+    top: 290px;
+    margin-left: 36px;
+}
+
+.heading--sel {
+    width: 347px;
+    color: #000;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    margin-bottom: 0px;
+}
+
+.p--sel {
+    color: #222;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 110%;
+    width: 320px;
+    height: 56px;
+    margin-top: 16px;
+    margin-bottom: 0;
+}

@@ -1,0 +1,17 @@
+.maindiv--sel {
+  width: 550px;
+  height: 810px;
+  border-radius: 8.95px;
+  background-color: #FCF5E5;
+  margin: 2px;
+}
+
+.mainbg--sel {
+  display: grid;
+  flex-direction: none;
+  align-items: none;
+  justify-content: center;
+  font-family: Inter;
+  background-color: #F2D2BD;
+  margin: 0;
+}/*# sourceMappingURL=App.css.map */

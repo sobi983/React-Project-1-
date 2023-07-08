@@ -1,0 +1,16 @@
+.navbar--sel2 {
+  height: 70px;
+  position: static;
+  display: flex;
+  align-items: center;
+  background-color: #FCF5E5;
+  filter: drop-shadow(0px 2.9825618267px 7.4564042091px rgba(0, 0, 0, 0.1));
+  border-radius: 0 0 10px 10px;
+  margin: 0;
+}
+
+.navbar--sel1 {
+  width: 82.02px;
+  height: 25.352px;
+  padding-left: 30px;
+}/*# sourceMappingURL=navbar.css.map */

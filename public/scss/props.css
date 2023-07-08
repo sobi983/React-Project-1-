@@ -1,0 +1,8 @@
+.container--sel{
+   height: 350px;
+   width: 350px;
+   border-style: solid;
+   border-color: brown;
+   margin-left: 10px;
+   margin-top: 20px;
+}

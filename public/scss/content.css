@@ -1,0 +1,87 @@
+.img--sel {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.img--sel1 {
+  position: absolute;
+  top: 64.81px;
+  left: 77px;
+}
+
+.img--sel2 {
+  position: absolute;
+  top: 33.23px;
+  left: 157.75px;
+}
+
+.img--sel3 {
+  position: absolute;
+  top: 105.54px;
+  left: 157.75px;
+}
+
+.img--sel4 {
+  position: absolute;
+  top: 56.13px;
+  left: 238.5px;
+}
+
+.img--sel5 {
+  position: absolute;
+  top: 161.58px;
+  left: 238.5px;
+}
+
+.img--sel6 {
+  position: absolute;
+  top: 26px;
+  left: 319.85px;
+}
+
+.img--sel7 {
+  position: absolute;
+  top: 131.45px;
+  left: 319.85px;
+}
+
+.img--sel8 {
+  position: absolute;
+  top: 44.08px;
+  left: 400.59px;
+}
+
+.img--sel9 {
+  position: absolute;
+  top: 148.93px;
+  left: 400.59px;
+}
+
+.content--sel1 {
+  position: absolute;
+  top: 290px;
+  margin-left: 36px;
+}
+
+.heading--sel {
+  width: 347px;
+  color: #000;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  margin-bottom: 0px;
+}
+
+.p--sel {
+  color: #222;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 110%;
+  width: 320px;
+  height: 56px;
+  margin-top: 16px;
+  margin-bottom: 0;
+}/*# sourceMappingURL=content.css.map */

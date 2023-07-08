@@ -1,0 +1,94 @@
+@use './margin';
+
+.sec--sel {
+    display: flex;
+    justify-content: space-around;
+}
+
+.div--reviews1 {
+    position: relative;
+    top: 445px;
+    height: 100px;
+    width: 120px;
+
+}
+
+.review--img1 {
+    width: 150px;
+    height: 210px;
+}
+
+.div--reviews2 {
+    display: flex;
+    margin: 2px 0 4px 2px;
+
+    P {
+        margin: margin.$margin;
+        color: #222;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 110%;
+    }
+
+    span {
+        color: #918E9B;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 110%;
+        margin-left: 2px;
+    }
+}
+
+.dot--sel {
+    // padding-bottom: 4px;
+    margin: margin.$margin;
+}
+
+.div--reviews3 {
+    margin-top: margin.$margin;
+    width: max-content;
+    // overflow: hidden; this concept will be practice later on, it's not working although I am setting the width in div, still not working
+
+    .title--sel {
+        margin: margin.$margin;
+        color: #222;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 110%;
+        width: 150px;
+    }
+}
+
+.price--sel {
+    font-weight: bold;
+    line-height: 110%;
+    padding-top: 5px;
+    color: #222;
+    font-size: 12px;
+    font-style: normal;
+    margin: margin.$margin;
+}
+
+.soldout--sel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 10.24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    width: 61px;
+    height: 15px;
+    background-color: white;
+    font-family: inherit;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    left: 4px;
+}
