@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/header';
+import Memes from './components/memes';
+// import EventListnerBtn from './components/eventListnerPractice';  
+// import IncreDecre from './components/increment-decrement';  practice
+// import FlipState from './components/flippingState'; practice
+// import BoxApp from './components/boxApp'; practice
+// import ConditionalRendering from './components/conditionalRendering'; practice
+// import Forms from './components/formsPractice'; practice
+// import FormsQuiz from './components/formQuiz2'; practice
+// import UseEffect from './components/useEffect'; practice
 
-function App() {
+
+
+export default function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container w-00 h-00 m-auto mt-32 font-karla bg-gray-200 ">
+      <Header />
+      <Memes />
     </div>
-  );
+  )
 }
 
-export default App;
+
+{/* <EventListnerBtn /> practice */}
+{/* <IncreDecre/>  practice */}
+{/* <FlipState /> */}
+{/* <BoxApp /> */}
+{/* <ConditionalRendering /> */}
+{/* {<Forms />} */}
+{/* <FormsQuiz /> */}
+{/* <UseEffect /> */}
