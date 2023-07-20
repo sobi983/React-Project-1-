@@ -1,4 +1,5 @@
 // import reactHalf from "../img/react-half.svg"
+<<<<<<< HEAD
 function Content(props){
 
     console.log(props)
@@ -11,6 +12,11 @@ function Content(props){
     }
     return(
         <div style={props.mode === true ? dark : light} className="react--half content--divMain">
+=======
+function Content(){
+    return(
+        <div className="react--half content--divMain">
+>>>>>>> 489fa0f3cd543ef3ba73865a88bf01c2d3610e10
             <h1>Fun facts about React</h1>
             <ul>
                 <li>Was first released in 2013</li>
