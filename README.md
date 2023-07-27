@@ -49,4 +49,5 @@ In the above image the elements of the components changes on re-render. Under th
 So, now react assumes that the new virtual DOM is totally a new one. Besides the sequence is just changed not the values. But React will add all of those 3 elements in the Real DOM tree making it inefficient. SO, here the **key** property comes in. The diffing algorithm compares the keys of the elements instead elements. So, the only newly created keys can be added into the Real DOM tree. Just like the image below
 
 ![Alt Text](./diffing-2.png)
+Hello
 
