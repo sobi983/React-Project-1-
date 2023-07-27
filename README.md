@@ -33,7 +33,7 @@ The reconsiliation is not the only step that standalone to compare and display t
 
 
 ![Alt Text](./reconsliation-diffing.png)
-![Alt Text](./old-new-tree.png)
+![Alt Text](./  q   .png)
 ![Alt Text](./react-components-ui-tree-l.jpg)
 
 As you may see a key property in the React element tree. This **key** plays the major part in optimization of the react's tree nodes trasversing during diffing. lets take an example.
@@ -49,5 +49,4 @@ In the above image the elements of the components changes on re-render. Under th
 So, now react assumes that the new virtual DOM is totally a new one. Besides the sequence is just changed not the values. But React will add all of those 3 elements in the Real DOM tree making it inefficient. SO, here the **key** property comes in. The diffing algorithm compares the keys of the elements instead elements. So, the only newly created keys can be added into the Real DOM tree. Just like the image below
 
 ![Alt Text](./diffing-2.png)
-Hello
 
