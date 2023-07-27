@@ -1,15 +1,20 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { nanoid } from "nanoid";
-import ConfettiExplosion from 'react-confetti-explosion';
+// import ConfettiExplosion from 'react-confetti-explosion';
 import Confetti from 'react-confetti'
 import Dice from "./components/dice";
+import StopWatch from "./components/timer";
+// import RefHook from "./components/practiceUseRefHook";
 
 function App() {
   let [diceNumber, setDiceNumber] = useState(fillDice)
   let [selectedNumber, setSelectedNumber] = useState(null)
   let [decline, setDecline] = useState(false)
   let [isExploding, setIsExploding] = useState(false);
-  // let [winnerCount, setWinnerCount] = useState(1)
+  let [seconds, setSeconds] = useState(0)
+  let [startTimer, setStartTimer] = useState(true)
+  let timer = useRef()
+
   const width = window.innerWidth
   const height = window.innerHeight
 
@@ -17,8 +22,21 @@ function App() {
     let winner = diceNumber.every((check) => check.isHold === true)
     if (winner === true) {
       setIsExploding(true)
+      stopTime()
+      timer.current = 0
     }
   }, [diceNumber])
+
+  function startTime() {
+    clearInterval(timer.current)
+    timer.current = setInterval(() => {
+      setSeconds(prev => prev + 1)
+    }, 1000);
+  }
+
+  function stopTime() {
+    return clearInterval(timer.current)
+  }
 
   function fillDice() {
     let newArr = []
@@ -41,10 +59,16 @@ function App() {
     setDiceNumber(prev => {
       return prev.map(items => {
         if (id === items.id) {
-          if (selectedNumber === null) {
+          if (selectedNumber === null && startTimer === true) {
+            setStartTimer((prev)=> !prev)
             setDecline(false)
             setSelectedNumber(items.number)
-            // setWinnerCount(prev => prev + 1)
+            startTime()
+            return { ...items, isHold: !items.isHold }
+          }
+          else if (selectedNumber === null) {
+            setDecline(false)
+            setSelectedNumber(items.number)
             return { ...items, isHold: !items.isHold }
           }
           else if (selectedNumber === items.number && items.isHold === false) {
@@ -87,10 +111,12 @@ function App() {
     })
   }
 
-  function startAgain(){
+  function startAgain() {
     setDiceNumber(fillDice())
     setSelectedNumber(null)
     setIsExploding(false)
+    setSeconds(0)
+    setStartTimer(true)
   }
 
   return (
@@ -99,24 +125,30 @@ function App() {
         <h1 className="text-gray-800 font-handjet font-extrabold  text-8xl sm:text-9xl mt-8">Tenzies</h1>
         <h3 className="text-slate-600 font-tektur text-center text-xl sm:text-2xl sm:w-6/12 ">Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</h3>
 
+        <StopWatch sec={seconds} />
         {decline === true &&
           <div className="border bg-red-500 p-5 mt-4">
             <strong>Nope! </strong>
             I won't allow that, Noobray
           </div>
         }
-        <div className="grid grid-cols-5 grid-rows-2 mt-24 gap-6 sm:gap-12">
+        <div className="grid grid-cols-5 grid-rows-2 mt-12 gap-6 sm:gap-12">
           {diceShow}
         </div>
 
 
-        {isExploding === false ? <button className="mt-16 mb-10 rounded-r-lg border rounded text-4xl text-white bg-purple-900 p-4 px-12 shadow-xl hover:bg-purple-950" onClick={roll}>Roll 
-        </button> : <button className="mt-16 mb-10 rounded-r-lg border rounded text-4xl text-white bg-purple-900 p-4 px-9 shadow-xl hover:bg-purple-950" onClick={startAgain}>Start Again 
+        {isExploding === false ? <button className="mt-16 mb-10 rounded-r-lg border rounded text-4xl text-white bg-purple-900 p-4 px-12 shadow-xl hover:bg-purple-950" onClick={roll}>Roll
+        </button> : <button className="mt-16 mb-10 rounded-r-lg border rounded text-4xl text-white bg-purple-900 p-4 px-9 shadow-xl hover:bg-purple-950" onClick={startAgain}>Start Again
         </button>}
         {isExploding === true && <Confetti width={width} height={height} />}
       </div>
+
+
+
     </div>
   );
 }
 
 export default App;
+
+{/* <RefHook/> */ }
