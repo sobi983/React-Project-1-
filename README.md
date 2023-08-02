@@ -7,6 +7,8 @@ The dark and the light mode are added but for the main functioanlity check not f
 The design link is:- https://www.figma.com/file/xA1rJVQOorqMW6xjGdBLcI/ReactFacts?type=design&node-id=0-1&mode=design&t=IRdBnPPr3ioRNv4s-0 
 ![Alt Text](./Screenshot%202023-07-04%20202429.png)
 
+Don’t call Hooks inside loops, conditions, or nested functions. Instead, always use Hooks at the top level of your React function, before any early returns. You can only call Hooks while React is rendering a function component:  https://react.dev/warnings/invalid-hook-call-warning
+
 
 **React Lifecycle**:-
 
