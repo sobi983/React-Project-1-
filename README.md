@@ -80,7 +80,7 @@ export default function App() {
 
   return (
     <div>
-      <h1>Print User details</h1>
+      <h1.>Print User details</.h1>
       <p>
         User Name: <strong>{name}</strong>
       </p>
