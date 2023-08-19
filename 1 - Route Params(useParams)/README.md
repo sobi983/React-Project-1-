@@ -79,9 +79,9 @@ In this project I have used useParams() for nested routing purpose. The nested r
 
 Example:-
 ![Alt Text](./img-project/nestedUI1.png)
-![Alt Text](/img-project/nestedUI2.png)
-![Alt Text](/img-project/nestedUI3.png)
-![Alt Text](/img-project/nestedUI4.png)
+![Alt Text](./img-project/nestedUI2.png)
+![Alt Text](./img-project/nestedUI3.png)
+![Alt Text](./img-project/nestedUI4.png)
 
 
 Reason For Using Nesting instead of Route Params
