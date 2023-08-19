@@ -78,7 +78,7 @@ In this project I have used useParams() for nested routing purpose. The nested r
 2. Now coming to the nested routing there are often situations where we want to keep the UI and just on the clicks we want to change some part of the UI. Just like the Image Below.
 
 Example:-
-![Alt Text](/img-project/nestedUI1.png)
+![Alt Text](./img-project/nestedUI1.png)
 ![Alt Text](/img-project/nestedUI2.png)
 ![Alt Text](/img-project/nestedUI3.png)
 ![Alt Text](/img-project/nestedUI4.png)
