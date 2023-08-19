@@ -1,0 +1,30 @@
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+    width: 5px;
+    width: 5px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #EBD5B2;
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+    background-color: #C2A484;
+  }
+  
+  *::-webkit-scrollbar-track:active {
+    background-color: #C2BB91;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #746875;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #968FCB;
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #774DA3;
+  }
