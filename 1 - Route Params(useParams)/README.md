@@ -85,7 +85,7 @@ Example:-
 
 
 Reason For Using Nesting instead of Route Params
-![Alt Text](/img-project/nesting1.png)
+![Alt Text](./img-project/nesting1.png)
 
 
 
