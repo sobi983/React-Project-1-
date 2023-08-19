@@ -1,7 +1,7 @@
 **Defer && Await && Suspense**
 
 This is indeed the most difficult part of this project. Lets take a look at the image below
-![Alt text](/img-project/img-1.png)
+![Alt text](./img-project/img-1.png)
 
 This concept is a bit related to the efficiency of the page laoding.
 The Image above shows the traditional websites using the raw HTML, CSS and Vanilla JS for the website development. We=hat happens usually when the page is loaded the HTML file is being readed. The file contains the JS scripts tags in which different functionalities are being used. So, when we use synchrounous function the waterfall model of the website looks like the first one in the image.
