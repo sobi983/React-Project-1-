@@ -14,16 +14,16 @@ After the data is loaded from the API then the loading page is removed and the a
 lets say we are on /about page then we routed to the /vans page. When we have clicked on the /vans page the page will not be redirected to the new /vans page immideately. The UL will be on /about page. The request to the API will requested and then the content once loaded the /about page will be removed and /vans page will be rendered. 
 
 This is the /about page, No, we have clicked on /vans page
-![Image Alt Text](/img-project/loader-1.png)
+![Image Alt Text](./img-project/loader-1.png)
 
 The /vans page have been loaded but the content on the /vans page isn't still being loaded. Once laoded, it will get rendered on the page. 
-![Image Alt Text](/img-project/loader-2.png)
+![Image Alt Text](./img-project/loader-2.png)
 
 Content has been loaded 
-![Image Alt Text](/img-project/loader-3.png)
+![Image Alt Text](./img-project/loader-3.png)
 
 If we use the loaders Hook then the content will be loaded bofore redirected to the another page. Here, in the image below you can see that the /vans page data is being loaded then once, the data is laoded then it will be redirected to the /vans page. 
-![Image Alt Text](/img-project/loader-4.png)
+![Image Alt Text](./img-project/loader-4.png)
 
 
 1. When does the code in a loader function run?
